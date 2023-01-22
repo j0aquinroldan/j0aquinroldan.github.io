@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge - Encriptador de texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+
+    <body>
+        <header>
+            
+            
+        </header>
+
+        <main>
+            
+            <img class="logo" src="imagenes/Vectorlogo.svg" alt="logo-Alura-A">
+            
+
+            <section class="vertical">
+
+                <div class="texto">
+                    <textarea id="input-texto" class="input-texto" cols="30" rows="10" placeholder="Ingrese el texto aqui" autofocus></textarea>
+
+                    <div class="alerta">
+                        <h6> <img src="imagenes/Vector.svg" alt="exclamacion"> Solo letras minúsculas y sin acentos</h6>
+                    </div>
+                
+                </div>
+                
+                <div class="botones">
+                    <button id="btn-encriptar" class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button id="btn-desencriptar" class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                </div>  
+            </section>
+            
+            <div class="rectangulo">
+                
+                
+                <img id="muneco" class="muneco" src="imagenes/Muñeco.svg" alt="muneco-alura">
+                
+                <div id="prompt1"><h2>Ningun mensaje fue encontrado</h2></div>
+                <div id="prompt2"><h4>Ingresa el texto que desees encriptar o desencriptar.</h4></div>
+
+                <div>
+                    <textarea id="mensaje" class="mensaje" readonly ></textarea>
+                </div>
+                
+                <div>
+                    <button id="copiar" class="copiar" onclick="copiarMensaje()">Copiar</button>
+                </div>
+                  
+               
+                      
+            </div>
+
+        </main>
+
+        <script type="text/javascript" src="encriptador.js"></script>
+    
+    </body>
+
+
+</html>
