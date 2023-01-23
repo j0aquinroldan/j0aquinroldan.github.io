@@ -8,8 +8,11 @@
     line-height: 150%;
 }
 
-html {
+html, body {
     height: 100%;
+    
+    margin: 0;
+
 }
 
 
@@ -36,8 +39,9 @@ main {
     /* margin-left: 80px; */
     justify-content: space-between;
     /* align-items: center; */
-    flex-wrap: wrap;
-   
+     flex-wrap: wrap;
+    align-content: flex-end;
+    gap: 20px; 
 
 }
 
@@ -104,7 +108,12 @@ main {
 
 .botones {
     display: flex;
-    margin-top: 18px;
+    /* margin-top: 18px; */
+    justify-content: space-around;
+
+    
+    
+    
 }
 
 .btn-desencriptar {
@@ -126,9 +135,9 @@ main {
     color: white;
     font-size: 22px;
     cursor: pointer;
-    /* height: 50px; */
+    height: 50px; 
     width: 250px;
-    margin-right: 30px;
+
 }
 
 
@@ -223,6 +232,4 @@ main {
     margin-top: 20px;
     align-self: flex-end;
 }
-
-
 

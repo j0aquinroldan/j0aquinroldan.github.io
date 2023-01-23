@@ -23,7 +23,7 @@
             <img class="logo" src="imagenes/Vectorlogo.svg" alt="logo-Alura-A">
             
 
-            <section class="vertical">
+            <div class="vertical">
 
                 <div class="texto">
                     <textarea id="input-texto" class="input-texto" cols="30" rows="10" placeholder="Ingrese el texto aqui" autofocus></textarea>
@@ -35,10 +35,17 @@
                 </div>
                 
                 <div class="botones">
-                    <button id="btn-encriptar" class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
-                    <button id="btn-desencriptar" class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                    <div>
+                        <button id="btn-encriptar" class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    </div>
+
+                    <div>
+                        <button id="btn-desencriptar" class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                    </div>
+                   
+                    
                 </div>  
-            </section>
+            </div>
             
             <div class="rectangulo">
                 
