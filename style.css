@@ -233,7 +233,7 @@ header {
     align-self: flex-end;
 }
 
-@media (max-width: 500px){
+@media (max-width: 480px){
     .logo, .vertical, .rectangulo, .input-texto{
         width: 100%;
     }
