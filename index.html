@@ -19,53 +19,60 @@
         </header>
 
         <main>
-            
-            <img class="logo" src="imagenes/Vectorlogo.svg" alt="logo-Alura-A">
-            
 
-            <div class="vertical">
-
-                <div class="texto">
-                    <textarea id="input-texto" class="input-texto" cols="30" rows="10" placeholder="Ingrese el texto aqui" autofocus></textarea>
-
-                    <div class="alerta">
-                        <h6> <img src="imagenes/Vector.svg" alt="exclamacion"> Solo letras minúsculas y sin acentos</h6>
-                    </div>
-                
+            <div class="contenedor">
+                <div class="logo">
+                    <img class="logo-img" src="imagenes/Vectorlogo.svg" alt="logo-Alura-A">
                 </div>
                 
-                <div class="botones">
-                    <div>
-                        <button id="btn-encriptar" class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
-                    </div>
-
-                    <div>
-                        <button id="btn-desencriptar" class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
-                    </div>
-                   
+                
+    
+                <div class="vertical">
+    
+                    <div class="texto">
+                        <textarea id="input-texto" class="input-texto" cols="30" rows="10" placeholder="Ingrese el texto aqui" autofocus></textarea>
+    
+                        <div class="alerta">
+                            <h6> <img src="imagenes/Vector.svg" alt="exclamacion"> Solo letras minúsculas y sin acentos</h6>
+                        </div>
                     
-                </div>  
+                    </div>
+                    
+                    <div class="botones">
+                        <div >
+                            <button id="btn-encriptar" class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                        </div>
+    
+                        <div>
+                            <button id="btn-desencriptar" class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                        </div>
+                       
+                        
+                    </div>  
+                </div>
+                
+                <div class="rectangulo">
+                    
+                    
+                    <img id="muneco" class="muneco" src="imagenes/Muñeco.svg" alt="muneco-alura">
+                    
+                    <div id="prompt1"><h2>Ningun mensaje fue encontrado</h2></div>
+                    <div id="prompt2"><h4>Ingresa el texto que desees encriptar o desencriptar.</h4></div>
+    
+                    <div>
+                        <textarea id="mensaje" class="mensaje" readonly ></textarea>
+                    </div>
+                    
+                    <div>
+                        <button id="copiar" class="copiar" onclick="copiarMensaje()">Copiar</button>
+                    </div>
+                      
+                   
+                          
+                </div>
             </div>
             
-            <div class="rectangulo">
-                
-                
-                <img id="muneco" class="muneco" src="imagenes/Muñeco.svg" alt="muneco-alura">
-                
-                <div id="prompt1"><h2>Ningun mensaje fue encontrado</h2></div>
-                <div id="prompt2"><h4>Ingresa el texto que desees encriptar o desencriptar.</h4></div>
-
-                <div>
-                    <textarea id="mensaje" class="mensaje" readonly ></textarea>
-                </div>
-                
-                <div>
-                    <button id="copiar" class="copiar" onclick="copiarMensaje()">Copiar</button>
-                </div>
-                  
-               
-                      
-            </div>
+           
 
         </main>
 
