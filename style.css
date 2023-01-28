@@ -20,6 +20,7 @@ html, body {
 
 body {
     background-color: #F3F5FC;
+    /* background-color: black; */
     height: 547px;
     padding: 40px;
     
@@ -206,7 +207,8 @@ header {
 
 .mensaje {
     width: 252px;
-    height: 417px;
+     height: 417px; 
+    
     border: none;
     border-radius: 24px;
     color: #0A3871;
@@ -246,7 +248,21 @@ header {
     
     }
     .rectangulo{
+        
+        height: 200px;
         margin-bottom: 40px;
     }
     .btn-encriptar{margin-bottom: 10px;}
+
+    #muneco{
+        display: none;
+    }
+
+    .prompt1 h2{
+        margin: 0;
+
+    }
+    .mensaje{
+        height: auto;
+    }
 }

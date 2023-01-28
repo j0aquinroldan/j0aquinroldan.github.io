@@ -1,7 +1,7 @@
 
 
 var inputTexto = document.querySelector("#input-texto");
-var muneco = document.getElementById("muneco");
+var muneco = document.querySelector(".muneco");
 var mensaje = document.getElementById("mensaje");
 var prompt1 = document.getElementById("prompt1");
 var prompt2 = document.getElementById("prompt2");
@@ -44,14 +44,18 @@ function limpiarRectangulo(texto){
 
         return texto;
     }
-    if (mensaje.value != "") {
-        activarRectangulo();
-    }
+        if (mensaje.value != "" && screen.width>480) {
+            muneco.style.display = "block";
+            activarRectangulo();
+        }
+        if (mensaje.value != "" && screen.width<480) {
+            activarRectangulo();
+        }
     
 }
 
 function activarRectangulo() {
-        muneco.style.display = "block";
+        
         prompt1.style.display = "contents";
         prompt2.style.display = "contents";
         copiar.style.display = "none";
